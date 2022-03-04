@@ -21,7 +21,7 @@ def hello():
 def predict():
     weather_dict = {
     "clear": "Clear, Few clouds, Partly cloudy, Partly cloudy",
-    "cloudy": "Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist"
+    "cloudy": "Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist",
     "light_rain":"Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds",
     "heavy_rain":"Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog"
     }
