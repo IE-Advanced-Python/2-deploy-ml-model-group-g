@@ -28,12 +28,12 @@ def predict():
 
     start_time = time.time()
 
-    dteday = request.args.get("dteday")
-    hr = int(request.args.get("hr"))
-    weathersit = weather_dict[request.args.get("weathersit")]
-    temp = float(request.args.get("temp"))
-    atemp = float(request.args.get("atemp"))
-    hum = float(request.args.get("hum"))
+    dteday = request.args.get("date")
+    hr = int(request.args.get("hour"))
+    weathersit = weather_dict[request.args.get("weather_situation")]
+    temp = float(request.args.get("temperature"))
+    atemp = float(request.args.get("feeling_temperature"))
+    hum = float(request.args.get("humidity"))
     windspeed = float(request.args.get("windspeed"))
     result = ai.predict(
         dteday=dteday,
