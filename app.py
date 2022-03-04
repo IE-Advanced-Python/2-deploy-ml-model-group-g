@@ -7,6 +7,7 @@ import sklearn
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello():
 
@@ -20,10 +21,10 @@ def hello():
 @app.route("/predict")
 def predict():
     weather_dict = {
-    "clear": "Clear, Few clouds, Partly cloudy, Partly cloudy",
-    "cloudy": "Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist",
-    "light_rain":"Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds",
-    "heavy_rain":"Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog"
+        "clear": "Clear, Few clouds, Partly cloudy, Partly cloudy",
+        "cloudy": "Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist",
+        "light_rain": "Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds",
+        "heavy_rain": "Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog",
     }
 
     start_time = time.time()
